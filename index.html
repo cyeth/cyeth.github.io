@@ -6,20 +6,18 @@
     </head>
     <body style='margin : 0px; overflow: hidden;'>
         <a-scene embedded arjs>
-            <a-assets>
+            <!-- <a-assets>
                 <a-asset-item id="bike" src="cyeth.github.io/bikescene.gltf"></a-asset-item>
-            </a-assets>
+            </a-assets> -->
             <a-marker-camera preset='hiro'>
-                <a-entity gltf-model="##bike" scale="0.01 0.01 0.01"></a-entity>
+                <a-entity gltf-model='url(cyeth.github.io/bikescene.gltf)'></a-entity>
+                <!-- <a-entity gltf-model="##bike" scale="0.01 0.01 0.01"></a-entity> -->
                 <!-- <a-text value="Hello, World!"></a-text> -->
                 <!-- <a-entity 
                     obj-model='obj: url(cyeth.github.io/lion-cub.obj); mtl: url(cyeth.github.io/lion-cub.mtl)'>
                 </a-entity> -->
             </a-marker-camera>
-            <!-- define your gltf asset -->
-
-            <!-- use your gltf model -->
-            <!-- <a-entity camera></a-entity> -->
+            <a-entity camera></a-entity>
         </a-scene>
     </body>
 </html>
