@@ -11,7 +11,13 @@
             <!-- </a-marker-camera> -->
 
             <a-marker-camera preset='hiro'>
-                <a-text value="Hello, World!"></a-text>
+                <!-- define your gltf asset -->
+                <a-assets>
+                    <a-asset-item id="bike" src="cyeth.github.io/triumphscene.gltf"></a-asset-item>
+                </a-assets>
+                <!-- use your gltf model -->
+                <a-entity gltf-model="##bike"></a-entity>
+                <!-- <a-text value="Hello, World!"></a-text> -->
                 <!-- <a-entity 
                     obj-model='obj: url(cyeth.github.io/lion-cub.obj); mtl: url(cyeth.github.io/lion-cub.mtl)'>
                 </a-entity> -->
