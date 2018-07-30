@@ -6,7 +6,7 @@
         <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
     </head>
     <body style='margin: 0px; overflow: hidden;'>
-        <a-scene embedded arjs>
+        <a-scene embedded artoolkit='sourceType:webcam;'>
             <!-- <a-assets>
                 <a-asset-item id="bike" src="cyeth.github.io/bikescene.gltf"></a-asset-item>
             </a-assets> -->
@@ -14,11 +14,12 @@
             <!-- <a-entity gltf-model="url(cyeth.github.io/bikescene.gltf)" scale="0.1 0.1 0.01"></a-entity> -->
             <a-marker preset='hiro'>
                 <a-entity
-                id="bike"
-                position="0 0 0"
-                scale="1 1 1"
-                gltf-model-next="src: url(cyeth.github.io/buster_drone/buster_drone.gltf);"
-                animation-mixer></a-entity>
+                    id="bike"
+                    position="0 0 0"
+                    scale="1 1 1"
+                    gltf-model-next="src: url(./buster_drone/buster_drone.gltf);"
+                    animation-mixer>
+                </a-entity>
                 <!-- <a-entity scale="0.5 0.5 0.5" gltf-model-legacy="src: url(cyeth.github.io/bikescene.gltf);">
                 </a-entity> -->
                 <!-- <a-entity gltf-model="##bike" scale="0.01 0.01 0.01"></a-entity> -->
