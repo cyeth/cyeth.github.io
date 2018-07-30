@@ -6,23 +6,19 @@
     </head>
     <body style='margin : 0px; overflow: hidden;'>
         <a-scene embedded arjs>
-            <!-- <a-marker-camera type='pattern' patternUrl='cyeth.github.io/pattern-marker2.patt'> -->
-                <!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
-            <!-- </a-marker-camera> -->
-
             <a-marker-camera preset='hiro'>
-                <!-- define your gltf asset -->
-                <a-assets>
-                    <a-asset-item id="bike" src="cyeth.github.io/triumphscene.gltf"></a-asset-item>
-                </a-assets>
-                <!-- use your gltf model -->
-                <a-entity gltf-model="##bike"></a-entity>
                 <!-- <a-text value="Hello, World!"></a-text> -->
                 <!-- <a-entity 
                     obj-model='obj: url(cyeth.github.io/lion-cub.obj); mtl: url(cyeth.github.io/lion-cub.mtl)'>
                 </a-entity> -->
             </a-marker-camera>
-            <a-entity camera></a-entity>
+            <!-- define your gltf asset -->
+            <a-assets>
+                <a-asset-item id="bike" src="cyeth.github.io/triumphscene.gltf"></a-asset-item>
+            </a-assets>
+            <!-- use your gltf model -->
+            <a-entity gltf-model="##bike"></a-entity>
+            <!-- <a-entity camera></a-entity> -->
         </a-scene>
     </body>
 </html>
