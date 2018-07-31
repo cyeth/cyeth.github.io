@@ -7,13 +7,17 @@
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
         <a-assets>
-            <a-asset-item id="drone" src="https://cyeth.github.io/models/damagedHelmet_gltf/damagedHelmet.gltf"></a-asset-item>
+            <a-asset-item id="drone" src="https://cyeth.github.io/models/busterDrone_gltf/scene.gltf"></a-asset-item>
         </a-assets>
         <!-- create your content here. just a box for now -->
         <!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
         <!-- define a camera which will move according to the marker position -->
         <a-marker-camera preset='hiro'>
-            <a-entity gltf-model="#drone" position='0 0.5 0' scale='0.2 0.2 0.2'></a-entity>
+            <a-entity
+                gltf-model="#drone"
+                position='0 0.5 0'
+                scale='0.01 0.01 0.01'
+                animation-mixer="clip: Start_Liftoff"></a-entity>
         </a-marker-camera>
     </a-scene>
 </body>
