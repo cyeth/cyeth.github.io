@@ -90,19 +90,19 @@
 	],
 	"images": [
 		{
-			"uri": "https://cyeth.github.io/models/damagedHelmet_gltf/Assets/Models/PBR/damagedHelmet/textures/Default_albedo.jpg"
+			"uri": "./Assets/Models/PBR/damagedHelmet/textures/Default_albedo.jpg"
 		},
 		{
-			"uri": "https://cyeth.github.io/models/damagedHelmet_gltf/Assets/Models/PBR/damagedHelmet/textures/Default_MetalSmooth_converted_metalRoughness.jpg"
+			"uri": "./Assets/Models/PBR/damagedHelmet/textures/Default_MetalSmooth_converted_metalRoughness.jpg"
 		},
 		{
-			"uri": "https://cyeth.github.io/models/damagedHelmet_gltf/Assets/Models/PBR/damagedHelmet/textures/Default_normal.jpg"
+			"uri": "./Assets/Models/PBR/damagedHelmet/textures/Default_normal.jpg"
 		},
 		{
-			"uri": "https://cyeth.github.io/models/damagedHelmet_gltf/Assets/Models/PBR/damagedHelmet/textures/Default_emissive.jpg"
+			"uri": "./Assets/Models/PBR/damagedHelmet/textures/Default_emissive.jpg"
 		},
 		{
-			"uri": "https://cyeth.github.io/models/damagedHelmet_gltf/Assets/Models/PBR/damagedHelmet/textures/Default_AO.jpg"
+			"uri": "./Assets/Models/PBR/damagedHelmet/textures/Default_AO.jpg"
 		}
 	],
 	"materials": [
