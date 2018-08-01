@@ -9,10 +9,10 @@
 			
 			<a-anchor hit-testing-enabled="true">
 				
-				<a-gltf-model src="https://cyeth.github.io/assets/busterDrone_gltf/scene.gltf" 
+				<a-gltf-model src="https://cyeth.github.io/assets/cesiumMan/CesiumMan.gltf" 
 							position="0 0.5 0"
 							rotation="90 180 0"
-							scale="0.01 0.01 0.01"
+							scale="1 1 1"
 							animation-mixer="loop:repeat">
 				</a-gltf-model>
 							
@@ -43,67 +43,3 @@
         </a-marker-camera>
     </a-scene>
 </body> -->
-
-
-<!-- <!DOCTYPE html>
-<html>
-    <head>
-        <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-        <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-    </head>
-    <body style='margin: 0px; overflow: hidden;'>
-        <a-scene embedded artoolkit='sourceType:webcam;'>
-            <a-marker preset='hiro'>
-                <a-text value="Hello, World!"></a-text>
-                <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
-                <a-entity
-                    fbx-model="src: url(cyeth.github.io/assets/ananas.FBX);" >
-                </a-entity>
-                <a-entity 
-                    obj-model='obj: url(cyeth.github.io/assets/lion-cub.obj); mtl: url(cyeth.github.io/assets/lion-cub.mtl)' scale='0.4 0.4 0.4'>
-                </a-entity>
-            </a-marker>
-            <a-entity camera></a-entity>
-        </a-scene>
-    </body>
-</html> -->
-
-<!-- <html>
-	<head>
-		<title>My first three.js app</title>
-		<style>
-			body { margin: 0; }
-			canvas { width: 100%; height: 100% }
-		</style>
-	</head>
-	<body>
-		<script src="js/three.js"></script>
-		<script>
-			var scene = new THREE.Scene();
-			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
-
-			var renderer = new THREE.WebGLRenderer();
-			renderer.setSize( window.innerWidth, window.innerHeight );
-			document.body.appendChild( renderer.domElement );
-
-			var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-			var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-			var cube = new THREE.Mesh( geometry, material );
-			scene.add( cube );
-
-			camera.position.z = 5;
-
-			var animate = function () {
-				requestAnimationFrame( animate );
-
-				cube.rotation.x += 0.01;
-				cube.rotation.y += 0.01;
-
-				renderer.render( scene, camera );
-			};
-
-			animate();
-		</script>
-	</body>
-</html> -->
